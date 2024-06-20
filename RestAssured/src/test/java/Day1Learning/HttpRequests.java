@@ -35,7 +35,7 @@ public class HttpRequests
 		
 	}
 	@Test
-	public void testcase1()
+	public void testcase2()
 	{
 		
 	}
