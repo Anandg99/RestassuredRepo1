@@ -45,6 +45,13 @@ public class HttpRequests
 		//added test case2 for github check
 	}
 	@Test
+	public void testcase4()
+	{
+		//added test case4 for github checking
+	}
+	
+	
+	@Test
 	public void VerifyAvailablePets()
 	{
 		given()
