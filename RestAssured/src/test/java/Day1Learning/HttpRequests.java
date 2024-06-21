@@ -39,7 +39,11 @@ public class HttpRequests
 	{
 		
 	}
-	
+	@Test
+	public void testcase3()
+	{
+		//added test case2 for github check
+	}
 	@Test
 	public void VerifyAvailablePets()
 	{
