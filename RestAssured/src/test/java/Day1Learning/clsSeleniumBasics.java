@@ -45,29 +45,7 @@ public class clsSeleniumBasics {
 		System.out.println("Current URL is:" + dr.getCurrentUrl());
 		System.out.println("Title is:" + dr.getTitle());
 	}
-	//Actions class: MovetoElement
-	@Test
-	public void MoveToElement() {
-		Actions action = new Actions(dr);
-		dr.navigate().to("https://www.google.com");
-		WebElement txtSrch = dr.findElement(By.name("q"));
-		dr.manage().window().maximize();
-		System.out.println("Current URL is:" + dr.getCurrentUrl());
-		System.out.println("Title is:" + dr.getTitle());
-		action.moveToElement(txtSrch).sendKeys("India").build().perform();
-	}
-			
-	// Actions class: MovetoElement, Rightclick
-	@Test
-	public void LearnActionsClass() {
-		Actions action = new Actions(dr);
-		dr.navigate().to("https://www.google.com");
-		WebElement txtSrch = dr.findElement(By.name("q"));
-		dr.manage().window().maximize();
-		System.out.println("Current URL is:" + dr.getCurrentUrl());
-		System.out.println("Title is:" + dr.getTitle());
-		action.moveToElement(txtSrch).contextClick().build().perform();
-	}
+	
 
 	@Test
 	public void LearnHashmap()
