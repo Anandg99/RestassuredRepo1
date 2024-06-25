@@ -16,7 +16,7 @@ import org.testng.annotations.Test;
 import Common.clsCommon;
 public class ActionsClass {
 	WebDriver dr;
-
+	clsCommon objCommon=new clsCommon();
 	public ActionsClass() // constructor
 	{
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Anand.Gummadilli\\Downloads\\chromedriver.exe");
@@ -63,7 +63,7 @@ public class ActionsClass {
 	public void LearnJavascriptExecutor() throws InterruptedException {
 		Actions action = new Actions(dr);
 		dr.navigate().to("https://www.amazon.com");
-		clsCommon objCommon=new clsCommon();
+		
 		objCommon.ScrollUp(5000, dr);
 		Thread.sleep(2000);
 		objCommon.ScrollDown(1000, dr);
