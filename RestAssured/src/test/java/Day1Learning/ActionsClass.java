@@ -5,6 +5,7 @@ import java.util.Map;
 import java.util.ArrayList;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -12,7 +13,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
+import Common.clsCommon;
 public class ActionsClass {
 	WebDriver dr;
 
@@ -58,4 +59,14 @@ public class ActionsClass {
 		action.moveToElement(txtSrch).contextClick().build().perform();
 	}
 
+	@Test
+	public void LearnJavascriptExecutor() throws InterruptedException {
+		Actions action = new Actions(dr);
+		dr.navigate().to("https://www.amazon.com");
+		clsCommon objCommon=new clsCommon();
+		objCommon.ScrollUp(5000, dr);
+		Thread.sleep(2000);
+		objCommon.ScrollDown(1000, dr);
+		
+	}
 }
