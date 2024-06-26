@@ -1,7 +1,10 @@
 package Day1Learning;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Hashtable;
+import java.util.Iterator;
 import java.util.Map;
+import java.util.Set;
 import java.util.ArrayList;
 import java.util.Dictionary;
 
@@ -60,6 +63,28 @@ public class clsCollections
 		System.out.println("Size is:" + cars.size()); //size:3
 		System.out.println("contains bmw:" + cars); //expected : true
 		
+	}
+	@Test
+	public void LearnSet()
+	{
+		 Set<String> hash_Set = new HashSet<String>(); 
+		  
+	        // Adding elements to the Set 
+	        // using add() method 
+	        hash_Set.add("Geeks"); 
+	        hash_Set.add("For"); 
+	        hash_Set.add("Geeks"); 
+	        hash_Set.add("Example"); 
+	        hash_Set.add("Set"); 
+	  
+	        // Printing elements of HashSet object 
+	        //System.out.println(hash_Set); 
+	        Iterator value = hash_Set.iterator(); 
+	        while (value.hasNext()) { 
+	            System.out.println("value:" + value.next()); 
+	        } 
+	        hash_Set.clear();
+	        System.out.println(hash_Set.contains("Example"));
 	}
 }
 
