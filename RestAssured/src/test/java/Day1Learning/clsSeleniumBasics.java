@@ -103,6 +103,12 @@ public class clsSeleniumBasics {
 			System.out.println("Student is Old");
 		}
 	}
+	@Test
+	public void LearnInheritance()
+	{
+		clsChild objChild=new clsChild();
+		objChild.DisplayName();
+	}
 }
 
 
