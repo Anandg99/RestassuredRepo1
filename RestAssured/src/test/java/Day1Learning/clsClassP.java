@@ -16,4 +16,7 @@ public class clsClassP {
 		return 25;
 	}
 	
+	public int age=25;
+	public String city="beeramguda";
+
 }

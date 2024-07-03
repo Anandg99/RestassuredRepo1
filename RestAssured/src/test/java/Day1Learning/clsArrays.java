@@ -1,4 +1,6 @@
 package Day1Learning;
+import java.util.Map;
+
 import org.testng.annotations.Test;
 
 public class clsArrays {
@@ -20,27 +22,48 @@ public class clsArrays {
 		arrCities[0]="Hyderabad";
 		arrCities[1]="Chennai";
 		arrCities[2]="Mumbai";
+		//arrCities[3]="Rajashtan"; // array index out side the bounds
 		
 		System.out.println("Length is:" + arrCities.length);
+		/*
 		for(int i=0;i<arrCities.length;i++)
 		{
 			System.out.println(arrCities[i]);	
 		}
+		*/
+		
+		for (String city : arrCities) 
+		{
+           
+           System.out.println(city.toString());
+        }
 		
 	}
 	@Test
 	public void Learn2DArray()
 	{
-		String[][] arrCities=new String[2][2];
+		String[][] arrCities=new String[3][2];
 		arrCities[0][0]="Hyderabad";
 		arrCities[0][1]="Chennai";
+		
+		
 		arrCities[1][0]="Mumbai";
 		arrCities[1][1]="Delhi";
 		
-		System.out.println("Length is:" + arrCities.length);
+		arrCities[2][0]="VJA";
+		arrCities[2][1]="Nellore";
+		
+		
+		System.out.println("Row count is:" + arrCities.length); // 0 1 2 
+		System.out.println("Col count is:" + arrCities[0].length); //0 1
+		
 		for(int i=0;i<arrCities.length;i++)
 		{
-			System.out.println(arrCities[i][0]);	
+			for(int j=0;j<arrCities[0].length;j++)
+			{
+				System.out.println(arrCities[i][j]);		
+			}
+			
 		}
 		
 	}

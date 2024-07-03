@@ -108,6 +108,14 @@ public class clsSeleniumBasics {
 	{
 		clsChild objChild=new clsChild();
 		objChild.DisplayName();
+		objChild.DisplayName("Asha"); //overloaded method
+	}
+	@Test
+	public void VerifySdetails()
+	{
+		clsStud objStud=new clsStud();
+		String sname= objStud.GetStudBySno(500);
+		System.out.println("Student name is:" + sname);
 	}
 }
 

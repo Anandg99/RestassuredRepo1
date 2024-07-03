@@ -44,9 +44,13 @@ public class clsCollections
 	public void LearnArraylist()
 	{
 		ArrayList<String> cars=new ArrayList<String>();
-		cars.add("BMW");
-		cars.add("Audi");
-		cars.add("Benz");
+		cars.add("BMW"); //0
+		cars.add("Audi"); //1
+		cars.add("Benz"); //2
+		cars.add("Dezire");
+		cars.add("Bugati");
+		//cars.clear();
+		cars.remove(0);
 		System.out.println("Size is:" + cars.size()); //size:3
 		System.out.println("contains bmw:" + cars.contains("BMW")); //expected : true
 		System.out.println("contains Dezire:" + cars.contains("Dezire")); //expected : False
@@ -71,20 +75,21 @@ public class clsCollections
 		  
 	        // Adding elements to the Set 
 	        // using add() method 
-	        hash_Set.add("Geeks"); 
-	        hash_Set.add("For"); 
-	        hash_Set.add("Geeks"); 
-	        hash_Set.add("Example"); 
-	        hash_Set.add("Set"); 
+	        hash_Set.add("One"); 
+	        hash_Set.add("Two"); 
+	        hash_Set.add("Three"); 
+	        hash_Set.add("Four"); 
+	        hash_Set.add("Five"); 
 	  
 	        // Printing elements of HashSet object 
 	        //System.out.println(hash_Set); 
+	         //hash_Set.clear();
 	        Iterator value = hash_Set.iterator(); 
 	        while (value.hasNext()) { 
 	            System.out.println("value:" + value.next()); 
 	        } 
-	        hash_Set.clear();
-	        System.out.println(hash_Set.contains("Example"));
+	        
+	        System.out.println(hash_Set.contains("One"));
 	}
 }
 
