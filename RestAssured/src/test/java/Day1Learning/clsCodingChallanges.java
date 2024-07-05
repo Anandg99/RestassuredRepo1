@@ -1,6 +1,9 @@
 package Day1Learning;
 import java.util.Arrays;
-
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Hashtable;
+import java.util.Iterator;
 import org.testng.annotations.Test;
 
 public class clsCodingChallanges 
@@ -54,6 +57,7 @@ public void FindLowestNumberFromArray()
 public void FindEvenOddNumbers()
 {
 	int number = 30;
+	
 
 	// Find out if the number above is even or odd
 	if (number % 2 == 0) {
@@ -62,4 +66,32 @@ public void FindEvenOddNumbers()
 	  System.out.println(number + " is odd.");
 	}
 }
+@Test
+public void CheckCharCount()
+{
+   String city="Hyderabad";
+   char arrChars[]=city.toCharArray();
+   int charCount=0;
+   
+   HashMap<Character, Integer> hm=new HashMap<Character, Integer>();
+  
+   for(int i=0;i<arrChars.length;i++)
+   {
+	   charCount=0;
+	   for(int j=0;j<arrChars.length;j++)
+	   {
+		   if(arrChars[i]==arrChars[j])
+		   {
+			   charCount=charCount+1;
+		   }
+		   
+	   }
+	   if(!hm.containsKey(arrChars[i]))
+	   {
+	     hm.put(arrChars[i], charCount);
+	     System.out.println(arrChars[i] +" Displayed:" + charCount);
+	   }
+   }
+}
+
 }
