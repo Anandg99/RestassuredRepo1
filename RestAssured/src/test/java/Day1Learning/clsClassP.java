@@ -9,7 +9,7 @@ public class clsClassP {
 	
 	public void DisplayName(String sname)
 	{
-		System.out.println("Student name is:" + sname);
+		System.out.println("Student name from parent is:" + sname);
 	}
 	private int GetStudAge()
 	{

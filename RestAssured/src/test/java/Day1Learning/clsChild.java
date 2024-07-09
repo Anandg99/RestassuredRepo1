@@ -8,5 +8,19 @@ public class clsChild extends clsClassP
 	{
 		System.out.println("Hyderabad");
 	}
+	@Override
+	public void DisplayName(String sname)
+	{
+		System.out.println("Student name from child is:" + sname);
+	}
 	
+	@Test
+	public void LearnOverriding()
+	{
+		clsChild objChild=new clsChild();
+		objChild.DisplayName("Hari");
+		
+		clsClassP objP=new clsChild();
+		objP.DisplayName("Anand");
+	}
 }
