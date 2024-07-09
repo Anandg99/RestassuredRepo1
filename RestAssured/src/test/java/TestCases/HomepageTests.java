@@ -35,20 +35,20 @@ public class HomepageTests
 	}
 	
 	@Test
-	public void SearchCountry()
+	public void SearchCountry() throws InterruptedException
 	{
 		System.setProperty("webdriver.chrome.driver","C:\\Users\\Anand.Gummadilli\\Downloads\\chromedriver.exe");
 		dr=new ChromeDriver();
 		_gpage=new GoogleHomePage(dr);
 		dr.navigate().to("https://www.google.com");
-		_gpage.txtSrch.sendKeys("Chaina");
+		_gpage.txtSrch.sendKeys("India");
 		_gpage.txtSrch.sendKeys(Keys.ENTER);
-		
+		dr.manage().window().maximize();
 		//dr.findElement(By.name("q")).sendKeys("India");
 		//dr.findElement(By.name("q")).sendKeys(Keys.ENTER);
 		//_gpage.txtSrc.sendKeys(Keys.ENTER);
 		//_gpage.SearchKeyword();
-		
+		Thread.sleep(3000);
 		//WebElement linkCapital=dr.findElement(By.xpath("//a[text()='New Delhi']"));
 		Assert.assertEquals(_gpage.linkCapital.isDisplayed(), true);
 	}

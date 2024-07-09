@@ -16,8 +16,8 @@ public class GoogleHomePage
 		
 	public GoogleHomePage(WebDriver driver)
 	{
-		this.dr=driver;
-		System.out.println("Called constructor");
+		//this.dr=driver;
+		//System.out.println("Called constructor");
 		PageFactory.initElements(driver, this);
 	}
 	
