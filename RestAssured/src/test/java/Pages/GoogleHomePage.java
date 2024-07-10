@@ -13,16 +13,21 @@ import org.openqa.selenium.support.PageFactory;
 public class GoogleHomePage 
 {
 	public WebDriver dr;
-		
+	public WebElement linkGmail;
+	public WebElement txtSrch;
+	
 	public GoogleHomePage(WebDriver driver)
 	{
-		//this.dr=driver;
+		this.dr=driver;
 		//System.out.println("Called constructor");
 		PageFactory.initElements(driver, this);
+		txtSrch=dr.findElement(By.name("q"));
+		linkGmail= dr.findElement(By.linkText("Gmail"));
 	}
-	
+
+
 	@FindBy(how=How.NAME,using="q")
-	public WebElement txtSrch;
+	public WebElement txtSrch1;
 
 	@FindBy(how=How.XPATH,using="//a[text()='New Delhi']")
 	public WebElement linkCapital;
