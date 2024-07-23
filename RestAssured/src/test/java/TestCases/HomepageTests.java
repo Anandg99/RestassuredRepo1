@@ -1,6 +1,5 @@
 package TestCases;
 
-
 import java.util.HashMap;
 import java.util.Map;
 import java.util.ArrayList;
@@ -15,28 +14,24 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import Pages.GoogleHomePage;
 
-public class HomepageTests
-{
+public class HomepageTests {
 
 	WebDriver dr;
-	GoogleHomePage _gpage=null;
-	
-	public HomepageTests()
-	{
-		//System.setProperty("webdriver.chrome.driver","C:\\Users\\Anand.Gummadilli\\Downloads\\chromedriver.exe");
-		//dr=new ChromeDriver();
-		//_gpage=new GoogleHomePage(dr);
-		
-		
+	GoogleHomePage _gpage = null;
+
+	public HomepageTests() {
+		// System.setProperty("webdriver.chrome.driver","C:\\Users\\Anand.Gummadilli\\Downloads\\chromedriver.exe");
+		// dr=new ChromeDriver();
+		// _gpage=new GoogleHomePage(dr);
+
 	}
-	public void DiasplayName()
-	{
-	  System.out.println("My name is Anand");
+
+	public void DiasplayName() {
+		System.out.println("My name is Anand");
 	}
-	
-	@Test(priority=1)
-	public void SearchCountry() throws InterruptedException
-	{
+
+	@Test(priority = 1)
+	public void SearchCountry() throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Anand.Gummadilli\\Downloads\\chromedriver.exe");
 		dr = new ChromeDriver();
 		_gpage = new GoogleHomePage(dr);
@@ -52,21 +47,21 @@ public class HomepageTests
 		// WebElement linkCapital=dr.findElement(By.xpath("//a[text()='New Delhi']"));
 		Assert.assertEquals(_gpage.linkCapital.isDisplayed(), true);
 	}
-	@Test(priority=1)
-	public void OpenGmail() throws InterruptedException
-	{
+
+	@Test(priority = 1)
+	public void OpenGmail() throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Anand.Gummadilli\\Downloads\\chromedriver.exe");
 		dr = new ChromeDriver();
 		dr.navigate().to("https://www.google.com");
 		_gpage = new GoogleHomePage(dr);
-		
+
 		_gpage.linkGmail.click();
-		//_gpage.txtSrch.sendKeys("India");
+		// _gpage.txtSrch.sendKeys("India");
 	}
-	//Get the URL, title
-	@Test(priority=2)
-	public void LearnGettingTitleURL()
-	{
+
+	// Get the URL, title
+	@Test(priority = 2)
+	public void LearnGettingTitleURL() {
 		dr.navigate().to("https://www.google.com");
 		dr.manage().window().maximize();
 		System.out.println("Current URL is:" + dr.getCurrentUrl());
@@ -74,5 +69,3 @@ public class HomepageTests
 	}
 
 }
-
-

@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Day1Learning.HttpRequests">
+      <class name="FileOperations.HandlingTextFiles">
         <methods>
-          <include name="VerifyPendingPets"/>
+          <include name="CreateTextFile"/>
         </methods>
-      </class> <!-- Day1Learning.HttpRequests -->
+      </class> <!-- FileOperations.HandlingTextFiles -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
