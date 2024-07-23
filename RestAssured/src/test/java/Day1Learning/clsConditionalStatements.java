@@ -24,29 +24,43 @@ public class clsConditionalStatements {
         	 System.out.println("Student is minor");
          }
 	}
+	@Test
+	public void VerifyStudAge()
+	{
+		int age=22;
+		if(age<18)
+		{
+		 System.out.println("student is minor");
+		}
+	}
 
 	@Test
 	public void LearnIfElseStmt() {
-		int age = 15;
-		if (age < 18) {
+		int age = 25;
+		if (age < 18) 
+		{
 			System.out.println("Student is minor");
-		} else if (age > 18 && age < 25) {
+		} 
+		else if (age > 18 && age < 25) 
+		{
 			System.out.println("Student is major");
 		}
 
-		else {
+		else 
+		{
 			System.out.println("Student is Old");
 		}
 	}
 	@Test
 	public void LearnSwitchCase()
 	{
-		int age=20;
+		int age=40;
 		switch(age)
 		{
 		case 20:
 			System.out.println("Student age is 20");
 			break;
+		
 		case 30:
 			System.out.println("Student age is 30");
 			break;

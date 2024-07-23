@@ -5,10 +5,24 @@ public class clsLoops {
 	@Test
 	public void LearnForLoop() 
 	{
-         for(int i=0;i<5;i++)
+		 int i=0;
+         for(i=0;i<5;i++)
          {
         	 System.out.println("Student number is : " + i);
          }
+    	 System.out.println("out side for loop Student number is : " + i);
+         
+	}
+	@Test
+	public void PrintEvenNumbers() 
+	{
+		 int i=0;
+         for(i=0;i<=10;i=i+2)
+         {
+        	 System.out.println("Student number is : " + i);
+         }
+    	 //System.out.println("out side for loop Student number is : " + i);
+         
 	}
 	@Test
 	public void LearnForLoop2() 
@@ -29,5 +43,14 @@ public class clsLoops {
         	 i=i+1;
          }
 	}
-	
+	@Test
+	public void LearnDoWhileLoop() 
+	{
+		int i=10;
+         do
+         {
+        	 System.out.println("Student number is : " + i);
+        	 i=i+1;
+         }while(i<5);
+	}
 }
