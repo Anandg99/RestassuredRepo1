@@ -24,4 +24,19 @@ public void GetSQRRoot()
 	System.out.println(Math.sqrt(num) + 0.40);
 	System.out.println(Math.abs(Math.sqrt(num)));
 }
+@Test
+public void PrintRandomNumbers()
+{
+	int randomNum = (int)(Math.random() * 101);  // 0 to 100
+	System.out.println(randomNum);
+	
+}
+@Test
+public void MathMin()
+{
+	int randomNum = Math.min(0, 20);  
+	System.out.println(randomNum);
+	
+}
+
 }
