@@ -4,6 +4,7 @@ import java.util.HashSet;
 import java.util.Hashtable;
 import java.util.Iterator;
 import java.util.Map;
+import java.util.Map.Entry;
 import java.util.Set;
 import java.util.ArrayList;
 import java.util.Dictionary;
@@ -48,6 +49,7 @@ public class clsCollections
 		           System.out.println(entry.getKey() + " = "
 		                              + entry.getValue());
 		       }
+				
 	}
 	@Test
 	public void LearnArraylist()
@@ -58,6 +60,8 @@ public class clsCollections
 		cars.add("Benz"); //2
 		cars.add("Dezire");
 		cars.add("Bugati");
+		cars.add("100");
+		
 		//cars.clear();
 		cars.remove(0);
 		System.out.println("Size is:" + cars.size()); //size:3

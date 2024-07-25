@@ -1,5 +1,7 @@
 package Day1Learning;
 import java.util.HashMap;
+import Day1Learning.Person;
+
 import java.util.List;
 import java.util.Map;
 import java.io.File;
@@ -136,5 +138,12 @@ public class clsSeleniumBasics {
 		{
 		 System.out.println("Exception reading excel");	
 		}
+	}
+	@Test
+	public void LearnEncapuslation()
+	{
+		Person p1=new Person();
+		p1.setName("Anand");
+		System.out.println("Name is: " + p1.getName());
 	}
 }

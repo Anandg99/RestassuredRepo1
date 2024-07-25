@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Day1Learning.clsArrays">
+      <class name="Day1Learning.clsCollections">
         <methods>
-          <include name="EvennumbersArray"/>
+          <include name="LearnHashmap"/>
         </methods>
-      </class> <!-- Day1Learning.clsArrays -->
+      </class> <!-- Day1Learning.clsCollections -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
