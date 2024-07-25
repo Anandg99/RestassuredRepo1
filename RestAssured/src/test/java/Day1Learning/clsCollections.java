@@ -25,20 +25,29 @@ public class clsCollections
 		hm.put("India", "Delhi");
 		hm.put("USA","Washinton");
 		hm.put("UK","London");
-		hm.put("USA","Newyork");
+		hm.put("Chaina","Beijing");
 		hm.put(null,"Newjersy");
 		
-		//loop through hashmap elements
-		for (Map.Entry<String, String> entry :
-            hm.entrySet()) {
-           
-           System.out.println(entry.getKey() + " = "
-                              + entry.getValue());
-       }
+		
+		//hm.clear();
+		hm.replace("USA", "Baltimore");
 		System.out.println(hm.size());
-		System.out.println(hm.containsKey("chaina"));
-		System.out.println(hm.containsValue("Chicago"));
-		System.out.println(hm.containsValue("Newyork"));
+		hm.remove("India");
+		
+		System.out.println(hm.size());
+		System.out.println(hm.containsKey("USA")); //true
+		System.out.println(hm.containsValue("Washington")); //false
+		
+		System.out.println(hm.containsValue("Baltimore"));//true
+		System.out.println(hm.containsValue("Newyork"));//true
+		
+		//loop through hashmap elements
+				for (Map.Entry<String, String> entry :
+		            hm.entrySet()) {
+		           
+		           System.out.println(entry.getKey() + " = "
+		                              + entry.getValue());
+		       }
 	}
 	@Test
 	public void LearnArraylist()

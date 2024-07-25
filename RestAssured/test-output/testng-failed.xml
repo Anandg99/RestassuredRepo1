@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="FileOperations.HandlingTextFiles">
+      <class name="Day1Learning.clsArrays">
         <methods>
-          <include name="CreateTextFile"/>
+          <include name="EvennumbersArray"/>
         </methods>
-      </class> <!-- FileOperations.HandlingTextFiles -->
+      </class> <!-- Day1Learning.clsArrays -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -2,6 +2,7 @@ package FileOperations;
 
 import org.testng.annotations.Test;
 import java.io.*;
+import java.util.Scanner;
 
 public class HandlingTextFiles {
 	@Test
@@ -65,5 +66,53 @@ public class HandlingTextFiles {
 	          }
 		 catch(Exception e)
 		 {System.out.println(e);}    
+	}
+	@Test
+	public void ReadTextFile2()
+	{
+		try {
+		      File myObj = new File("C:\\Anand_Details\\SampleFile2.txt");
+		      Scanner myReader = new Scanner(myObj);
+		      while (myReader.hasNextLine()) 
+		      {
+		        String data = myReader.nextLine();
+		        System.out.println(data);
+		      }
+		      myReader.close();
+		    } 
+		catch (FileNotFoundException e) 
+		{
+		      System.out.println("An error occurred.");
+		      e.printStackTrace();
+		}
+	}
+	@Test
+	public void DeleteFile()
+	{
+		File myObj = new File("C:\\Anand_Details\\SampleFile2.txt"); 
+	    if (myObj.delete()) 
+	    { 
+	      System.out.println("Deleted the file: " + myObj.getName());
+	    } else 
+	    {
+	      System.out.println("Failed to delete the file.");
+	    } 
+	}
+	@Test
+	public void GetFileInfo()
+	{
+		File myObj = new File("C:\\Anand_Details\\SampleFile2.txt");
+	    if (myObj.exists()) 
+	    {
+	      System.out.println("File name: " + myObj.getName());
+	      System.out.println("Absolute path: " + myObj.getAbsolutePath());
+	      System.out.println("Writeable: " + myObj.canWrite());
+	      System.out.println("Readable " + myObj.canRead());
+	      System.out.println("File size in bytes " + myObj.length());
+	    } 
+	    else 
+	    {
+	      System.out.println("The file does not exist.");
+	    }
 	}
 }

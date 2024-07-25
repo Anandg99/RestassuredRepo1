@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-07-23T11:59:47 IST" name="Default suite" finished-at="2024-07-23T11:59:47 IST" duration-ms="51">
+  <suite started-at="2024-07-25T07:54:13 IST" name="Default suite" finished-at="2024-07-25T07:54:13 IST" duration-ms="52">
     <groups>
     </groups>
-    <test started-at="2024-07-23T11:59:47 IST" name="Default test" finished-at="2024-07-23T11:59:47 IST" duration-ms="51">
-      <class name="FileOperations.HandlingTextFiles">
-        <test-method signature="ReadTextFile()[pri:0, instance:FileOperations.HandlingTextFiles@7de62196]" started-at="2024-07-23T11:59:47 IST" name="ReadTextFile" finished-at="2024-07-23T11:59:47 IST" duration-ms="8" status="PASS">
+    <test started-at="2024-07-25T07:54:13 IST" name="Default test" finished-at="2024-07-25T07:54:13 IST" duration-ms="52">
+      <class name="Day1Learning.clsCollections">
+        <test-method signature="LearnArraylist()[pri:0, instance:Day1Learning.clsCollections@7de62196]" started-at="2024-07-25T07:54:13 IST" name="LearnArraylist" finished-at="2024-07-25T07:54:13 IST" duration-ms="11" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ReadTextFile -->
-      </class> <!-- FileOperations.HandlingTextFiles -->
+        </test-method> <!-- LearnArraylist -->
+      </class> <!-- Day1Learning.clsCollections -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
