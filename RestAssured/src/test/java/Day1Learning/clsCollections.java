@@ -5,7 +5,8 @@ import java.util.Hashtable;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.Map.Entry;
-import java.util.Set;
+import java.util.*;
+//import java.util.Set;
 import java.util.ArrayList;
 import java.util.Dictionary;
 
@@ -78,7 +79,7 @@ public class clsCollections
 		cars.put("Audi","USA");
 		cars.put("Benz","Japan");
 		System.out.println("Size is:" + cars.size()); //size:3
-		System.out.println("contains bmw:" + cars); //expected : true
+		System.out.println("contains bmw:" + cars.get("Nissan")); //expected : true
 		
 	}
 	@Test
@@ -102,7 +103,7 @@ public class clsCollections
 	            System.out.println("value:" + value.next()); 
 	        } 
 	        
-	        System.out.println(hash_Set.contains("One"));
+	        System.out.println(hash_Set.contains("India"));
 	}
 	
 }

@@ -1,5 +1,5 @@
 package Day1Learning;
-
+import org.testng.annotations.*;
 public class clsStud 
 {
 
@@ -25,5 +25,12 @@ public class clsStud
 		}
 		
 		return sname;
+	}
+	
+	@Test
+	public void LearnAccessModifiers()
+	{
+		clsMethods objM=new clsMethods();
+		//objM.
 	}
 }
