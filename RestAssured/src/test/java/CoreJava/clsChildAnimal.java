@@ -1,4 +1,4 @@
-package Day1Learning;
+package CoreJava;
 
 public class clsChildAnimal extends AbstractClassAnimal
 {

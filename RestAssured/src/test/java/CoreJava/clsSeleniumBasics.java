@@ -1,7 +1,5 @@
-package Day1Learning;
+package CoreJava;
 import java.util.HashMap;
-import Day1Learning.Person;
-
 import java.util.List;
 import java.util.Map;
 import java.io.File;
@@ -25,6 +23,8 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.mysql.cj.result.Row;
+
+import CoreJava.Person;
 
 public class clsSeleniumBasics {
 
@@ -143,7 +143,20 @@ public class clsSeleniumBasics {
 	public void LearnEncapuslation()
 	{
 		Person p1=new Person();
+		
 		p1.setName("Anand");
 		System.out.println("Name is: " + p1.getName());
+	}
+	@Test
+	public void reverseString()
+	{
+		String name="Krutanjali"; //10
+		char arrChars[]=name.toCharArray();
+		String strRev="";
+		for(int i=arrChars.length-1;i>=0;i--)
+		{
+			strRev=strRev+ arrChars[i];
+		}
+		System.out.println(strRev);
 	}
 }

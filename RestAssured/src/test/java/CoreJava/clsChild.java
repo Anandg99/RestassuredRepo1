@@ -1,4 +1,4 @@
-package Day1Learning;
+package CoreJava;
 import org.testng.annotations.Test;
 
 public class clsChild extends clsClassP 
@@ -14,6 +14,8 @@ public class clsChild extends clsClassP
 		System.out.println("Student name from child is:" + sname);
 	}
 	
+	public int age=35;
+	
 	@Test
 	public void LearnOverriding()
 	{
@@ -22,5 +24,6 @@ public class clsChild extends clsClassP
 		
 		clsClassP objP=new clsChild();
 		objP.DisplayName("Anand");
+		System.out.println(objP.age);
 	}
 }

@@ -1,4 +1,4 @@
-package Day1Learning;
+package CoreJava;
 
 public class clsClassP {
 	
@@ -19,5 +19,6 @@ public class clsClassP {
 	public int age=25;
 	public String city="beeramguda";
 	public String uname="MIT";
+	
 
 }

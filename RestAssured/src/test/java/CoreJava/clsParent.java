@@ -1,9 +1,6 @@
-package Day1Learning;
+package CoreJava;
 
-import org.testng.annotations.*;
-
-public class clsMethods {
-
+public class clsParent {
 	public String country = "USA";
 	public static String Uname = "MIT";
 
@@ -37,17 +34,6 @@ public class clsMethods {
 		} else {
 			return true;
 		}
-	}
 
-	@Test
-	public void InvokeMethods() {
-		clsMethods objM = new clsMethods();
-		System.out.println(clsMethods.Uname);
-		objM.DisplayName("India");
-		int currentTemp = objM.GetWeatherByCity("Boston");
-		System.out.println("Temparature is : " + currentTemp);
-		boolean chkMajor=objM.isMajor(16);
-		System.out.println("Student is Major : " + chkMajor);
-		
-	}
+}
 }

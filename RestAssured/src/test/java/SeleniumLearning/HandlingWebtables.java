@@ -1,4 +1,4 @@
-package Day1Learning;
+package SeleniumLearning;
 
 import java.util.HashMap;
 import java.util.Map;

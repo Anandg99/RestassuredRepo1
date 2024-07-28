@@ -1,4 +1,4 @@
-package Day1Learning;
+package CoreJava;
 
 import java.util.Arrays;
 import java.util.HashMap;

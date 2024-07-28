@@ -1,4 +1,4 @@
-package Day1Learning;
+package SeleniumLearning;
 
 public class LoginTests {
 

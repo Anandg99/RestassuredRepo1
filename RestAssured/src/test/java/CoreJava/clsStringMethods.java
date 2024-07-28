@@ -1,4 +1,4 @@
-package Day1Learning;
+package CoreJava;
 import org.testng.annotations.*;
 
 public class clsStringMethods 
