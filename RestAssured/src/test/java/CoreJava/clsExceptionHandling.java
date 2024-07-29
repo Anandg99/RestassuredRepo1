@@ -30,4 +30,41 @@ public class clsExceptionHandling {
 			System.out.println(ex.getMessage());
 		}
 	}
+	@Test
+	public void LearnException2()
+	{
+		try
+		{
+			int a = 5;
+			int b = 0;
+		    int c=a/b;
+		}
+		
+		catch(ArithmeticException  ex1)
+		{
+			System.out.println(ex1.getMessage());
+		}
+		catch(Exception ex)
+		{
+			System.out.println(ex.getMessage());
+		}
+		
+	}
+	@Test
+	public void ArrayIndexException()
+	{
+		 try {
+	            int number[] = new int[20];
+	            number[21] = 30 / 9;
+	            // this statement will throw
+	            // ArrayIndexOutOfBoundsException e
+	        }
+	        catch (ArrayIndexOutOfBoundsException
+	               | ArithmeticException e) 
+		 	{
+	            System.out.println(e.getMessage());
+	            // print the message
+	        }
+		
+	}
 }

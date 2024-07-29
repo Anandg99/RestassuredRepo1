@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-07-28T07:26:22 IST" name="Default suite" finished-at="2024-07-28T07:26:22 IST" duration-ms="57">
+  <suite started-at="2024-07-29T13:45:51 IST" name="Default suite" finished-at="2024-07-29T13:45:51 IST" duration-ms="51">
     <groups>
     </groups>
-    <test started-at="2024-07-28T07:26:22 IST" name="Default test" finished-at="2024-07-28T07:26:22 IST" duration-ms="57">
-      <class name="Day1Learning.clsExceptionHandling">
-        <test-method signature="LearnException1()[pri:0, instance:Day1Learning.clsExceptionHandling@72d6b3ba]" started-at="2024-07-28T07:26:22 IST" name="LearnException1" finished-at="2024-07-28T07:26:22 IST" duration-ms="11" status="PASS">
+    <test started-at="2024-07-29T13:45:51 IST" name="Default test" finished-at="2024-07-29T13:45:51 IST" duration-ms="51">
+      <class name="CoreJava.clsExceptionHandling">
+        <test-method signature="ArrayIndexException()[pri:0, instance:CoreJava.clsExceptionHandling@7de62196]" started-at="2024-07-29T13:45:51 IST" name="ArrayIndexException" finished-at="2024-07-29T13:45:51 IST" duration-ms="7" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- LearnException1 -->
-      </class> <!-- Day1Learning.clsExceptionHandling -->
+        </test-method> <!-- ArrayIndexException -->
+      </class> <!-- CoreJava.clsExceptionHandling -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

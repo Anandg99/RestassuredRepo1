@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Day1Learning.clsExceptionHandling">
+      <class name="SeleniumLearning.HandlingAlerts">
         <methods>
-          <include name="LearnException1"/>
+          <include name="HandlingAlertsBasedonCondition"/>
         </methods>
-      </class> <!-- Day1Learning.clsExceptionHandling -->
+      </class> <!-- SeleniumLearning.HandlingAlerts -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
